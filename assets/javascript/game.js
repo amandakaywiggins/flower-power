@@ -7,49 +7,55 @@ var game = {
     losses: 0,
     damage: null,
 
+    //flowers
+    flowers: ["daffodil" , "lavender", "magnolia" , "wisteria"],
+
     //set up flowers
     setUpGame: function() {
         //chose a pollination goal
         pollinationGoal = [Math.floor(Math.random() * 120) + 1];
         document.querySelector("#pollination-goal").append(pollinationGoal);
         //assign each flower a pollen count
-        var flowers = ["daffodil", "lavender", "magnolia", "wisteria"];
-        for (j=0; j < flowers.length; j++) {
-        flowers[j] = [Math.floor(Math.random() * 12) + 1];
+        for (j=0; j < game.flowers.length; j++) {
+        game.flowers[j] = [Math.floor(Math.random() * 12) + 1];
         }
+        document.querySelector("#pollen-count").append(game.pollenCount);
+        document.querySelector("#wins").append(game.wins);
+        document.querySelector("#losses").append(game.losses);
     },
-
-    updatePage: function() {
+    updatePage: function(assesPollenLevels) {
         //log pollen
         var pollenLog = [];
         //add each click of a flower together
-        var assessPollenLevels = function() {
             $("#flowers").on("click" , $("#daffodil") , function() {
-                pollenLog.push(daffodil);
+                game.flowers[0] = $("#daffodil");
+                pollenLog.push$("#daffodil");
             })
             $("#flowers").on("click" , $("#lavender") , function() {
-                pollenLog.push(lavender);
+                flowers[1] = $("#laveder");
+                pollenLog.push$("#lavender");
             })
             $("#flowers").on("click" , $("#magnolia") , function() {
-                pollenLog.push(magnolia);
+                flowers[2] = $("#magnolia");
+                pollenLog.push$("#magnolia");
             })
             $("#flowers").on("click" , $("#wisteria") , function() {
-                pollenLog.push(wisteria);
+                flowers[3] = $("#wistera");
+                pollenLog.push$("#wisteria");
             })
-        }
         for (i=0; i < pollenLog.length; i++) {
             pollenLevels += pollenLog[i];
         }
     },
     gamePlay: function() {
         //game functions
-        if (pollinationGoal === pollenLevels) {
-            document.querySelecter("#wins").html = win + 1;
+        if (game.pollinationGoal === game.pollenLevels) {
+            document.querySelecter("#wins").html = game.win + 1;
             document.querySelector("#pollen-count").html = "";
-        } else if (pollinationGoal > pollenLevels) {
-            document.querySelector("#pollen-count").append(pollinationGoal);
+        } else if (game.pollinationGoal > game.pollenLevels) {
+            document.querySelector("#pollen-count").append(game.pollinationGoal);
         } else {
-            document.querySelector("#losses").html = losses + 1;
+            document.querySelector("#losses").html = game.losses + 1;
             document.querySelector("#pollen-count").html = "";
         }
     },
@@ -57,9 +63,9 @@ var game = {
 
 game.setUpGame();
 
-document.onclick = game.updatePage();
-
-console.log(daffodil);
-console.log(lavender);
-console.log(magnolia);
-console.log(wisteria);
+document.onclick = game.updatePage(game.assesPollenLevels);
+console.log(game.flowers[0]);
+console.log(game.flowers[1]);
+console.log(game.flowers[2]);
+console.log(game.flowers[3]);
+console.log(game.pollenLog);

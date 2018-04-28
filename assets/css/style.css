@@ -44,6 +44,9 @@ body {
     text-align: center;
     border-radius: 10px;
 }
+#scoreboard{
+    height: 160px;
+}
 h1 {
     font-family: 'Cabin Sketch', cursive;
     font-size: 50px;
