@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Julius+Sans+One" rel="stylesheet"> 
+        <title>Save the Bees</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="title">
+                        <h1>Flower Power!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <!--filler col-->
+                </div>
+                <div class="col-md-6">
+                    <div id="instructions">
+                        <p>
+                        Save the bees! 
+                        <br>
+                        <br>
+                        Bees are an important part of the pollination process.
+                        Their survival and ours depends on their ability to collect pollen from plants.
+                        <br>
+                        <br>
+                        Help these bees meet their pollination goals!
+                        <br>
+                        In each game, the bees need to collect exactly enough pollen to reach their Pollen Goal.
+                        Each flower is assigned a random pollen score.
+                        <br>
+                        Click on a flower to collect it's pollen. 
+                        <br>
+                        Try to meet the Pollen Goal exactly. If you go over the Pollen Goal, you lose! 
+                        The pollen values for each flower will change with every game.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!--filler col-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="pollination-goal">
+                        <h2>Pollination Goal</h2>
+                    </div>
+                    <div id="pollen-count"><h2>Pollen Count</h2></div>
+                    <div id="scoreboard">
+                        <div id="wins"><h2>Wins: </h2></div>
+                        <div id="losses"><h2>Losses: </h2></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <ul class="flowers">
+                        <li id="daffodil">
+                            <img src="assets/images/daffodil.png">
+                        </li>
+                        <li id ="lavender">
+                            <img src="assets/images/lavender.png">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="flowers">
+                        <li id="magnolia">
+                            <img src="assets/images/magnolia.png">
+                        </li>
+                        <li id="wisteria">
+                            <img src="assets/images/wisteria.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>

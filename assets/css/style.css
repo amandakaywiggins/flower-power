@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(#ffffff, #ffcb3d, #e8a13a, #995b00) fixed;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
+#title {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    color: #372151;
+    background: radial-gradient(circle, #e6c1ff, #603a8c, #372151);
+    border: solid;
+    border-color: #372151;
+    border-width: 3px;
+    border-radius: 10px;
+}
+#instructions {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: solid;
+    border-color: #603a8c;
+    border-width: 10px;
+    box-shadow: 5px 5px #372151;
+    background-color: #faf5ea;
+    border-radius: 10px;
+}
+#pollination-goal, #scoreboard, #pollen-count {
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width: 50%;
+    height: 100px;
+    border: solid;
+    border-color: #603a8c;
+    border-width: 10px;
+    background-color: #e6c1ff;
+    color: #603a8c;
+    box-shadow: 5px 5px #372151;
+    text-align: center;
+    border-radius: 10px;
+}
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+}
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 25px;
+    color: #372151;
+}
+p {
+    text-align: center;
+    color: #372151;
+}
+.flowers {
+    list-style-type: none;
+    margin: auto;
+}
+li {
+    margin: auto;
+    margin-bottom: 10px;
+    height: 155px;
+    width: 230px;
+    border: solid;
+    border-color: #603a8c;
+    border-width: 3px;
+    box-shadow: 5px 5px #372151;
+    border-radius: 10px;
+}
+img {
+    height: 150px;
+    border-radius: 10px;
+}
